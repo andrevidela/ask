@@ -11,7 +11,7 @@
   , TypeSynonymInstances
   , FlexibleInstances #-}
 
-module Ask.Src.Typing where
+module Ask.Typing where
 
 --import Data.List
 import Control.Applicative
@@ -23,15 +23,15 @@ import Data.List hiding ((\\))
 
 import Debug.Trace
 
-import Ask.Src.Bwd
-import Ask.Src.Thin
-import Ask.Src.Hide
-import Ask.Src.HalfZip
-import Ask.Src.Lexing
-import Ask.Src.RawAsk
-import Ask.Src.Tm
-import Ask.Src.Glueing
-import Ask.Src.Context
+import Ask.Bwd
+import Ask.Thin
+import Ask.Hide
+import Ask.HalfZip
+import Ask.Lexing
+import Ask.RawAsk
+import Ask.Tm
+import Ask.Glueing
+import Ask.Context
 
 track = const id
 

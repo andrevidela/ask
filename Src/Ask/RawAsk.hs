@@ -11,12 +11,12 @@
   , LambdaCase
 #-}
 
-module Ask.Src.RawAsk where
+module Ask.RawAsk where
 
-import Ask.Src.OddEven
-import Ask.Src.Lexing
-import Ask.Src.Parsing
-import Ask.Src.Tm
+import Ask.OddEven
+import Ask.Lexing
+import Ask.Parsing
+import Ask.Tm
 
 import qualified Data.Map as M
 import Control.Applicative

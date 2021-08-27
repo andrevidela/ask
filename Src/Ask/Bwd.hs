@@ -1,6 +1,6 @@
 {-# LANGUAGE DeriveTraversable #-}
 
-module Ask.Src.Bwd where
+module Ask.Bwd where
 
 infixl 3 :<, <><
 

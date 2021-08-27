@@ -8,7 +8,7 @@
     LambdaCase
 #-}
 
-module Ask.Src.Progging where
+module Ask.Progging where
 
 import Data.Char
 import Data.List hiding ((\\))
@@ -19,14 +19,14 @@ import Control.Arrow ((***))
 
 import Debug.Trace
 
-import Ask.Src.Bwd
-import Ask.Src.Hide
-import Ask.Src.HalfZip
-import Ask.Src.Tm
-import Ask.Src.Context
-import Ask.Src.Typing
-import Ask.Src.Lexing
-import Ask.Src.RawAsk
+import Ask.Bwd
+import Ask.Hide
+import Ask.HalfZip
+import Ask.Tm
+import Ask.Context
+import Ask.Typing
+import Ask.Lexing
+import Ask.RawAsk
 
 trade = const id
 

@@ -8,20 +8,20 @@
     LambdaCase
 #-}
 
-module Ask.Src.Proving where
+module Ask.Proving where
 
 import Data.Foldable
 import Data.Traversable
 
-import Ask.Src.Thin
-import Ask.Src.Hide
-import Ask.Src.Bwd
-import Ask.Src.Lexing
-import Ask.Src.RawAsk
-import Ask.Src.Tm
-import Ask.Src.Glueing
-import Ask.Src.Context
-import Ask.Src.Typing
+import Ask.Thin
+import Ask.Hide
+import Ask.Bwd
+import Ask.Lexing
+import Ask.RawAsk
+import Ask.Tm
+import Ask.Glueing
+import Ask.Context
+import Ask.Typing
 
 import Debug.Trace
 

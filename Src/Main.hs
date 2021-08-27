@@ -1,6 +1,6 @@
-module Ask.Src.Main where
+module Main where
 
-import Ask.Src.ChkRaw
+import Ask.ChkRaw
 
 main :: IO ()
 main = interact filth

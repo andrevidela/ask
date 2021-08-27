@@ -1,6 +1,6 @@
 {-# LANGUAGE TupleSections, LambdaCase, PatternSynonyms #-}
 
-module Ask.Src.ChkRaw where
+module Ask.ChkRaw where
 
 import Data.List hiding ((\\))
 import Data.Char
@@ -13,20 +13,20 @@ import Data.Foldable
 
 import Debug.Trace
 
-import Ask.Src.Hide
-import Ask.Src.Thin
-import Ask.Src.Bwd
-import Ask.Src.OddEven
-import Ask.Src.Lexing
-import Ask.Src.RawAsk
-import Ask.Src.Tm
-import Ask.Src.Glueing
-import Ask.Src.Context
-import Ask.Src.Typing
-import Ask.Src.Proving
-import Ask.Src.Printing
-import Ask.Src.HardwiredRules
-import Ask.Src.Progging
+import Ask.Hide
+import Ask.Thin
+import Ask.Bwd
+import Ask.OddEven
+import Ask.Lexing
+import Ask.RawAsk
+import Ask.Tm
+import Ask.Glueing
+import Ask.Context
+import Ask.Typing
+import Ask.Proving
+import Ask.Printing
+import Ask.HardwiredRules
+import Ask.Progging
 
 tracy = const id
 

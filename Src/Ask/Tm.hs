@@ -12,7 +12,7 @@
   , PatternSynonyms
 #-}
 
-module Ask.Src.Tm where
+module Ask.Tm where
 
 import Data.Bits
 import Data.List hiding ((\\))
@@ -21,10 +21,10 @@ import Control.Arrow ((***))
 import Data.Monoid
 import Control.Monad.Writer
 
-import Ask.Src.Bwd
-import Ask.Src.Thin
-import Ask.Src.HalfZip
-import Ask.Src.Hide
+import Ask.Bwd
+import Ask.Thin
+import Ask.HalfZip
+import Ask.Hide
 
 
 ------------------------------------------------------------------------------

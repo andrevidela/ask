@@ -1,7 +1,7 @@
-module Ask.Src.Glueing where
+module Ask.Glueing where
 
-import Ask.Src.Tm
-import Ask.Src.RawAsk
+import Ask.Tm
+import Ask.RawAsk
 
 data TmR
   = My Tm

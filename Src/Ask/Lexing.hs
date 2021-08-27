@@ -1,13 +1,13 @@
 {-# LANGUAGE EmptyDataDeriving, DeriveFunctor #-}
 
-module Ask.Src.Lexing where
+module Ask.Lexing where
 
 import Data.Char
 import Data.List
 import Data.Bifunctor
 
-import Ask.Src.Bwd
-import Ask.Src.OddEven
+import Ask.Bwd
+import Ask.OddEven
 
 lexAll :: String -> Bloc Line
 lexAll = lexPhase1 . lexPhase0
