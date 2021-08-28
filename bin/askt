@@ -1,1 +1,5 @@
+#!/usr/bin/env bash
+
+set -e
+
 diff <(ask < $1.ask) $1.asked
