@@ -1,13 +1,12 @@
-{ mkDerivation, base, containers, lib, mtl }:
-mkDerivation {
-  pname = "ask";
-  version = "0.1.0.0";
-  src = ./..;
-  isLibrary = false;
-  isExecutable = true;
-  libraryHaskellDepends = [ base containers mtl ];
-  executableHaskellDepends = [ base containers mtl ];
-  doHaddock = false;
-  license = "unknown";
-  hydraPlatforms = lib.platforms.none;
+{ pkgs ? import ./nixpkgs.nix {} }:
+
+with pkgs;
+
+haskell-nix.project {
+  src = haskell-nix.haskellLib.cleanGit {
+    name = "ask";
+    src = ../.;
+  };
+
+  compiler-nix-name = "ghc8105";
 }

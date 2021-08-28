@@ -1,8 +1,10 @@
+args:
+
 let
-  json = with builtins; fromJSON (readFile ./nixpkgs.json);
+  sources = import ./sources.nix {};
+  haskellNix = import sources.haskellNix args;
 in
 
-import (fetchTarball {
-  url = "https://github.com/${json.owner}/${json.repo}/archive/${json.rev}.tar.gz";
-  sha256 = json.sha256;
-})
+import
+  haskellNix.sources.nixpkgs-2009
+  haskellNix.nixpkgsArgs
