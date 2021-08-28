@@ -1,25 +1,10 @@
-dist
-dist-*
-cabal-dev
-*.o
-*.hi
-*.hie
-*.chi
-*.chs.h
-*.dyn_o
-*.dyn_hi
-.hpc
-.hsenv
-.cabal-sandbox/
-cabal.sandbox.config
-*.prof
-*.aux
-*.hp
-*.eventlog
-.stack-work/
-cabal.project.local
-cabal.project.local~
-.HTF/
-.ghc.environment.*
-bin/
-result
+# Cabal build output directory
+dist-newstyle/
+
+# Nix build output symlinks
+result*
+
+# Everything in /doc that is not .pdf or .tex
+/doc/*
+!/doc/*.pdf
+!/doc/*.tex
