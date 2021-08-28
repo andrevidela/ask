@@ -2,7 +2,7 @@
 
 with pkgs;
 
-haskell-nix.project {
+haskell-nix.cabalProject {
   src = haskell-nix.haskellLib.cleanGit {
     name = "ask";
     src = ../.;
