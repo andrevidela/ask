@@ -2,9 +2,10 @@ args:
 
 let
   sources = import ./sources.nix {};
+
   haskellNix = import sources.haskellNix args;
+  nixpkgs = import sources.nixpkgs;
+
 in
 
-import
-  haskellNix.sources.nixpkgs-2009
-  haskellNix.nixpkgsArgs
+import nixpkgs haskellNix.nixpkgsArgs
