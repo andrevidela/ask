@@ -8,4 +8,4 @@ let
 
 in
 
-import nixpkgs haskellNix.nixpkgsArgs
+nixpkgs haskellNix.nixpkgsArgs
